@@ -1,1 +1,1 @@
-# Quote-Of-The-Day-PHP
+# Simple quote of the day generator
