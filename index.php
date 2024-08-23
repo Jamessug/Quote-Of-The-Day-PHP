@@ -20,4 +20,24 @@ $random_key = array_rand($quotes); // array_rand picks random index from array
 
 $random_quote = $quotes[$random_key];
 
-echo $random_quote;
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote of the Day</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+ <div class="container text-center mt-5">
+  <div class="card">
+   <div class="card-body">
+    <h1>Quote of the Day</h1>
+    <p><?php echo $random_quote; ?></p>  <!-- Embedding the PHP variable in HTML -->
+   </div>
+  </div>
+ </div>
+</body>
+</html>
